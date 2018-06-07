@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"><input type="button" value="加密">
+<div id="div1">加密...</div>
+<script>
+let aInput = document.getElementsByTagName('input');
+let oDiv = document.getElementById('div1');
+aInput[1].onclick = function () {
+    let str = aInput[0].value; // 输入的文字
+    let str1 = '';
+    for (let i = 0; i<str.length; i++) {
+        str1+=String.fromCharCode(str.charCodeAt(i) - 10000) + ':';
+    }
+    oDiv.innerHTML = str1;
+}
+</script>
+</body>
+</html>

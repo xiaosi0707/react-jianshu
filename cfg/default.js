@@ -6,7 +6,7 @@ let dfPath = {
     dist: path.resolve(__dirname, '../dist'),
     common: path.resolve(__dirname, '../src/common'),
     components: path.resolve(__dirname, '../src/components'),
-    layout: path.resolve(__dirname, '../src/layout'),
+    layout: path.resolve(__dirname, '../src/frame'),
     view: path.resolve(__dirname, '../src/view'),
     root: path.resolve(__dirname, '../'),
     semantic: path.resolve(__dirname, '../semantic'),
